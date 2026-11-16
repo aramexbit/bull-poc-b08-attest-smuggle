@@ -1,0 +1,16 @@
+{
+  "poc": "Bull SDK attest() — smuggled approve + createAgreement actions executed, victim locks 5,000 tokens to attacker",
+  "sdk": "bull-sdk.mjs (verbatim copy of https://www.bull.family/sdk/bull.mjs)",
+  "agreement": "MockAgreement.sol (implements the DOCUMENTED Agreement semantics from llms.txt; real BullAgreement source is unverified)",
+  "legitAgreementId": "1",
+  "smuggledAgreementId": "2",
+  "smuggledPayee": "0xA86b796eb5b783A79282f06AC721435db8E9F971",
+  "smuggledPayeeIsAttacker": true,
+  "smuggledAmount": "5000",
+  "attestTxCount": 3,
+  "victimBalanceBefore": "9500",
+  "victimBalanceAfter": "4500",
+  "attackerBalanceAfter": "5000",
+  "contractorBalanceAfter": "0",
+  "exploited": true
+}
